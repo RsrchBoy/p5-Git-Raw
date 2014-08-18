@@ -836,6 +836,10 @@ directory. See C<Git::Raw::Repository-E<gt>merge()> for valid C<%merge_opts>
 and C<%checkout_opts> values. For merge commits C<$mainline> specifies the
 parent.
 
+=head2 revparse( $spec )
+
+TO BE COMPLETED
+
 =head2 state( )
 
 Determine the state of the repository. One of the following values is returned:
