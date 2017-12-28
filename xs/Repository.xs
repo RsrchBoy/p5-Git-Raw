@@ -910,6 +910,20 @@ workdir(self, ...)
 	OUTPUT: RETVAL
 
 SV *
+commondir(self, ...)
+	Repository self
+
+	PREINIT:
+		int rc;
+		const char *path;
+
+	CODE:
+		path = git_repository_commondir(self -> repository);
+		RETVAL = newSVpv(path, 0);
+
+	OUTPUT: RETVAL
+
+SV *
 blame(self, file)
 	SV *self
 	const char *file
