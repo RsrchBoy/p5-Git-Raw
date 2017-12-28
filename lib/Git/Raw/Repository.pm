@@ -913,6 +913,10 @@ Check if the repository is empty.
 
 Check if the repository is bare.
 
+=head2 is_worktree( )
+
+Check if the repository is a linked worktree.
+
 =head2 is_shallow( )
 
 Check if the repository is a shallow clone.

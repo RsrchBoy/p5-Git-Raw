@@ -1166,6 +1166,15 @@ is_bare(self)
 	OUTPUT: RETVAL
 
 SV *
+is_worktree(self)
+	Repository self
+
+	CODE:
+		RETVAL = newSViv(git_repository_is_worktree(self -> repository));
+
+	OUTPUT: RETVAL
+
+SV *
 is_empty(self)
 	Repository self
 
