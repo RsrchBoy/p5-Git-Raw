@@ -15,7 +15,7 @@ new(class)
 		Odb_Backend backend;
 
 	CODE:
-		rc = git_mempack_new(&backend);
+		/* rc = git_mempack_new(&backend); */
 		git_check_error(rc);
 
 		RETVAL = backend;
@@ -32,9 +32,9 @@ dump(self, repo)
 		git_buf buf = GIT_BUF_INIT_CONST(NULL, 0);
 
 	CODE:
-		rc = git_mempack_dump(&buf, repo -> repository,
-			self);
-		git_check_error(rc);
+		/* rc = git_mempack_dump(&buf, repo -> repository, */
+		/* 	self); */
+		/* git_check_error(rc); */
 
 		RETVAL = newSVpv(buf.ptr, buf.size);
 
@@ -47,5 +47,5 @@ reset(self)
 	Odb_Backend self
 
 	CODE:
-		git_mempack_reset(self);
+		/* git_mempack_reset(self); */
 
