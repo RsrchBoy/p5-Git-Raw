@@ -177,8 +177,6 @@ foreach my $test (@library_tests) {
 # universally supported
 $def .= ' -DNO_VIZ -DSTDC -DNO_GZIP -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE';
 
-$def .= ' -DLIBGIT2_NO_FEATURES_H';
-
 # supported on Solaris
 if ($is_solaris) {
 	$def .= ' -D_POSIX_C_SOURCE=200112L -D__EXTENSIONS__ -D_POSIX_PTHREAD_SEMANTICS';
@@ -259,7 +257,7 @@ if ($Config{usethreads} && !$is_sunpro) {
 }
 
 my @deps = glob 'deps/libgit2/deps/{http-parser,zlib}/*.c';
-my @srcs = glob 'deps/libgit2/src/{*.c,transports/*.c,xdiff/*.c,streams/*.c}';
+my @srcs = glob 'deps/libgit2/src/{*.c,transports/*.c,xdiff/*.c}';
 
 if ($is_msvc) {
 	push @srcs, 'deps/libgit2/src/hash/hash_win32.c';
