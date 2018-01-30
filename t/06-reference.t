@@ -37,6 +37,10 @@ $head = $ref -> target;
 isa_ok $head, 'Git::Raw::Commit';
 is $head -> summary, "third commit";
 
+# minimal tests here just to ensure the glue works
+my $ancestor = [ $head->parents ]->[0];
+ok $ref->contains($ancestor);
+
 ok(!eval { $ref -> peel('any') });
 
 my $peeled_commit = $ref -> peel('commit');
