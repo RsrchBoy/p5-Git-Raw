@@ -4,6 +4,12 @@ use strict;
 use warnings;
 
 use Git::Raw;
+use Git::Raw::Graph;
+
+sub contains {
+    my ($self, $maybe_ancestor) = @_;
+    return Git::Raw::Graph->is_descendant_of($self->owner, $self, $maybe_ancestor);
+}
 
 =head1 NAME
 
@@ -85,6 +91,15 @@ sub reflog { return Git::Raw::Reflog -> open (shift); }
 =head2 owner( )
 
 Retrieve the L<Git::Raw::Repository> owning the reference.
+
+=head2 contains( $maybe_ancestor )
+
+Determine if we are a descendant of C<$maybe_ancestor>.  C<$maybe_ancestor>
+should be peelable to a L<Git::Raw::Commit> object, that is, it should be a
+L<Git::Raw::Commit> or L<Git::Raw::Reference> object, or alternatively a
+commit id or commit id prefix.
+
+This is a shortcut for L<Git::Raw::Graph/is_descendant_of>.
 
 =head2 is_branch( )
 
