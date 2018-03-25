@@ -203,11 +203,8 @@ my %WriteMakefileArgs = (
     "File::Spec" => 0,
     "File::Spec::Functions" => 0,
     "File::Spec::Unix" => 0,
-    "File::chdir" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
-    "Path::Tiny" => 0,
-    "Test::Git" => 0,
     "Test::More" => 0,
     "Test::Pod" => "0.0",
     "Test::Pod::Coverage" => "0.0",
@@ -215,7 +212,7 @@ my %WriteMakefileArgs = (
   },
   "VERSION" => "0.80",
   "test" => {
-    "TESTS" => "t/*.t t/repository/*.t"
+    "TESTS" => "t/*.t"
   }
 );
 
@@ -236,11 +233,8 @@ my %FallbackPrereqs = (
   "File::Spec" => 0,
   "File::Spec::Functions" => 0,
   "File::Spec::Unix" => 0,
-  "File::chdir" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
-  "Path::Tiny" => 0,
-  "Test::Git" => 0,
   "Test::More" => 0,
   "Test::Pod" => "0.0",
   "Test::Pod::Coverage" => "0.0",

@@ -837,10 +837,6 @@ Retrieve the complete path of the repository.
 Retrieve the working directory of the repository. If C<$new_dir> is passed, the
 working directory of the repository will be set to the directory.
 
-=head2 commondir( )
-
-...
-
 =head2 blame( $path )
 
 Retrieve blame information for C<$path>. Returns a L<Git::Raw::Blame> object.
@@ -932,10 +928,6 @@ Check if the repository is empty.
 =head2 is_bare( )
 
 Check if the repository is bare.
-
-=head2 is_worktree( )
-
-Check if the repository is a linked worktree.
 
 =head2 is_shallow( )
 
