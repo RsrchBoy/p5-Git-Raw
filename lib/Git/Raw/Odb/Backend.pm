@@ -1,6 +1,7 @@
 package Git::Raw::Odb::Backend;
-$Git::Raw::Odb::Backend::VERSION = '0.80';
-use strict;
+$Git::Raw::Odb::Backend::VERSION = '0.79_20'; # TRIAL
+
+$Git::Raw::Odb::Backend::VERSION = '0.7920';use strict;
 use warnings;
 
 use Git::Raw;
@@ -14,7 +15,7 @@ Git::Raw::Odb::Backend - Git object database backend class
 
 =head1 VERSION
 
-version 0.80
+version 0.79_20
 
 =head1 DESCRIPTION
 

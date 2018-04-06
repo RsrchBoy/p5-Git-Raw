@@ -1,6 +1,7 @@
 package Git::Raw::Blame;
-$Git::Raw::Blame::VERSION = '0.80';
-use strict;
+$Git::Raw::Blame::VERSION = '0.79_20'; # TRIAL
+
+$Git::Raw::Blame::VERSION = '0.7920';use strict;
 use warnings;
 
 use Git::Raw;
@@ -11,7 +12,7 @@ Git::Raw::Blame - Git blame class
 
 =head1 VERSION
 
-version 0.80
+version 0.79_20
 
 =head1 DESCRIPTION
 

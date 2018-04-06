@@ -39,9 +39,7 @@ is $head -> summary, "third commit";
 
 # minimal tests here just to ensure the glue works
 my $ancestor = [ $head->parents ]->[0];
-ok $ref->contains($ancestor),     'contains(commit)';
-ok $ref->contains($ancestor->id), 'contains(commit id)';
-ok $ref->contains($ancestor),     'contains(Git::Raw::Reference)';
+ok $ref->contains($ancestor);
 
 ok(!eval { $ref -> peel('any') });
 

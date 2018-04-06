@@ -1,6 +1,7 @@
 package Git::Raw::Diff::File;
-$Git::Raw::Diff::File::VERSION = '0.80';
-use strict;
+$Git::Raw::Diff::File::VERSION = '0.79_20'; # TRIAL
+
+$Git::Raw::Diff::File::VERSION = '0.7920';use strict;
 use warnings;
 
 use Git::Raw;
@@ -11,7 +12,7 @@ Git::Raw::Diff::File - Git diff file class
 
 =head1 VERSION
 
-version 0.80
+version 0.79_20
 
 =head1 DESCRIPTION
 

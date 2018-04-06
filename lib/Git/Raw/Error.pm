@@ -1,6 +1,7 @@
 package Git::Raw::Error;
-$Git::Raw::Error::VERSION = '0.80';
-use strict;
+$Git::Raw::Error::VERSION = '0.79_20'; # TRIAL
+
+$Git::Raw::Error::VERSION = '0.7920';use strict;
 use warnings;
 use Carp;
 
@@ -35,7 +36,7 @@ Git::Raw::Error - Error class
 
 =head1 VERSION
 
-version 0.80
+version 0.79_20
 
 =head1 DESCRIPTION
 

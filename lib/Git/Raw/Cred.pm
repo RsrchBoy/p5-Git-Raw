@@ -1,6 +1,7 @@
 package Git::Raw::Cred;
-$Git::Raw::Cred::VERSION = '0.80';
-use strict;
+$Git::Raw::Cred::VERSION = '0.79_20'; # TRIAL
+
+$Git::Raw::Cred::VERSION = '0.7920';use strict;
 use warnings;
 
 =head1 NAME
@@ -9,7 +10,7 @@ Git::Raw::Cred - Git credentials class
 
 =head1 VERSION
 
-version 0.80
+version 0.79_20
 
 =head1 DESCRIPTION
 

@@ -1,6 +1,7 @@
 package Git::Raw::RefSpec;
-$Git::Raw::RefSpec::VERSION = '0.80';
-use strict;
+$Git::Raw::RefSpec::VERSION = '0.79_20'; # TRIAL
+
+$Git::Raw::RefSpec::VERSION = '0.7920';use strict;
 use warnings;
 
 =head1 NAME
@@ -9,7 +10,7 @@ Git::Raw::RefSpec - Git refspec class
 
 =head1 VERSION
 
-version 0.80
+version 0.79_20
 
 =head1 DESCRIPTION
 

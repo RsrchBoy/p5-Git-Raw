@@ -1,6 +1,7 @@
 package Git::Raw::Tree;
-$Git::Raw::Tree::VERSION = '0.80';
-use strict;
+$Git::Raw::Tree::VERSION = '0.79_20'; # TRIAL
+
+$Git::Raw::Tree::VERSION = '0.7920';use strict;
 use warnings;
 use overload
 	'""'       => sub { return $_[0] -> id },
@@ -14,7 +15,7 @@ Git::Raw::Tree - Git tree class
 
 =head1 VERSION
 
-version 0.80
+version 0.79_20
 
 =head1 DESCRIPTION
 
